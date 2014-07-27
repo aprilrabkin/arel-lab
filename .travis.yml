@@ -1,0 +1,6 @@
+script: RAILS_ENV=test RACK_ENV=test SINATRA_ENV=test bundle exec rake db:migrate; bundle exec rspec -f json
+rvm:
+  - 2.1.1
+notifications:
+  webhooks: http://progress.flatironschool.com/submissions
+cache: bundler
